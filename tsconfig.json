@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "strict": true,
+    "types": ["@citizenfx/client", "@citizenfx/server", "node"],
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
