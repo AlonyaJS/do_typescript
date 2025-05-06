@@ -1,9 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES2020",
     "module": "commonjs",
     "outDir": "dist",
-    "rootDir": "src",
+    "baseUrl": ".",
+    "paths": {
+      "@do_core/*": ["../do_core/types/*"]
+    },
     "esModuleInterop": true,
     "strict": true,
     "types": ["@citizenfx/client", "@citizenfx/server", "node"],
@@ -11,3 +14,4 @@
   },
   "include": ["src"]
 }
+
