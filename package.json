@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch"
+    "build": "npm run clearBuild && node build.js",
+    "watch": "npm run clearBuild && node build.js --watch",
+    "clearBuild": "rimraf dist"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,9 @@
   "type": "commonjs",
   "dependencies": {
     "@citizenfx/client": "latest",
-    "@citizenfx/server": "latest"
+    "@citizenfx/server": "latest",
+    "esbuild": "^0.25.4",
+    "rimraf": "^6.0.1"
   },
   "devDependencies": {
     "@types/node": "^22.15.3",
