@@ -1,0 +1,27 @@
+{
+  "name": "do_typescript",
+  "version": "0.0.0",
+  "description": "A TypeScript-based CitizenFX resource for FiveM game scripts",
+  "author": "Alonya",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "npm run clearBuild && npm run typecheck && node build.js",
+    "watch": "npm run clearBuild && node build.js --watch",
+    "clearBuild": "rimraf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@citizenfx/client": "latest",
+    "@citizenfx/server": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "esbuild": "^0.25.4",
+    "typescript": "^5.8.3",
+    "rimraf": "^6.0.1"
+  }
+}
