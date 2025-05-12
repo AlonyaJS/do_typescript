@@ -41,6 +41,7 @@ do_typescript/
 ├── src/                # Source TypeScript files (client and server)
 ├── dist/               # Compiled JavaScript files
 ├── fxmanifest.lua      # FiveM resource definition file
+├── build.js            # esbuild compile file
 ├── package.json        # Project metadata and npm scripts
 ├── tsconfig.json       # TypeScript configuration
 └── README.md           # Project documentation (this file)
